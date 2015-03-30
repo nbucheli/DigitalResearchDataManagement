@@ -1,0 +1,27 @@
+
+book
+*id integer
+- title text
+- authors text
+- publication year date
+- publisher text
+
+people
+* id integer
+- name text
+- adress text
+- e-mail adress text
+- phone number text
+#is phone number really text? I don't want to do any calculations with this & if I make it a number, there could be trouble with excel etc.
+
+
+borrowing process
+* id integer
+- book title => book.id
+- mode of borrowing
+- starting date 
+- due date
+- date of getting book back date
+- borrower => people.id
+
+#mode of borrowing could be s.th. as "asked for by e-mail"/face-to-face

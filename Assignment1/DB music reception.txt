@@ -1,0 +1,16 @@
+*music reception in 19th century
+
+play
+*id integer
+- name of play text
+- date of performance date
+- place of performance text   
+- actors 						#furhter infos needed? > then separate table
+
+
+review
+*id integer
+- author text
+- play reviewed => play.
+- published in text
+- kind of review 			#what does this mean?

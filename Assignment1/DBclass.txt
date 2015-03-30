@@ -1,0 +1,26 @@
+class
+* id integer
+- name of class text
+- number of participants integer
+- names of participants => participants.id
+
+
+participants
+* id integer
+- name text
+- e-mail adress text
+
+#question about e-mail/homepages: is there a way to make a link to the internet/e-mail work?
+
+attendance
+*id integer
+- name participant => participants.id
+- attendance dates => class dates.id 
+
+
+class dates
+*id integer
+- class 1 text?????
+- class 2 text
+- class 3 text
+
