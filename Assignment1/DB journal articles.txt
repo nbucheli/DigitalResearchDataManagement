@@ -4,12 +4,11 @@ articles
 *id integer
 - title text
 - authors text
-- acceptance text #yes/no = text?
-- journal issue published in integer
+- acceptance text #yes/no = text?  -- yes!
+- issue_published integer
 
 reviews
 *id integer
-- title review text
+- title_review text
 - author text
-- article reviewed => articles.id
-- 
+- article_reviewed => articles.id

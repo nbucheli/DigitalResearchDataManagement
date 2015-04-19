@@ -1,26 +1,29 @@
 class
 * id integer
-- name of class text
-- number of participants integer
-- names of participants => participants.id
+- class_name text
+- num_participants integer
+- names_participants => participants.id
 
 
 participants
 * id integer
 - name text
-- e-mail adress text
+- email text
 
 #question about e-mail/homepages: is there a way to make a link to the internet/e-mail work?
+# -- Not directly in SQL; the idea is that you would pull the email/Web address
+# from the database to your web page, and your web logic would know to make it
+# into a link. 
 
 attendance
 *id integer
-- name participant => participants.id
-- attendance dates => class dates.id 
+- participant => participants.id
+- attendance_dates => class_dates.id 
 
 
-class dates
+class_dates
 *id integer
-- class 1 text?????
-- class 2 text
-- class 3 text
+- class_1 text
+- class_2 text
+- class_3 text
 
