@@ -1,27 +1,34 @@
+## An important thing about SQL: all the table names and column names have
+## to be one word! I have fixed up your files to reflect this.
+
 
 book
 *id integer
 - title text
 - authors text
-- publication year date
+- publication_year date
 - publisher text
 
 people
 * id integer
 - name text
 - adress text
-- e-mail adress text
-- phone number text
+- email_adress text
+- phone_number text
 #is phone number really text? I don't want to do any calculations with this & if I make it a number, there could be trouble with excel etc.
+# -- Then yes, making it a text field is fine.
 
 
-borrowing process
+borrowing_process
 * id integer
-- book title => book.id
-- mode of borrowing
+- book_title => book.id
+- mode_of_borrowing text
 - starting date 
 - due date
-- date of getting book back date
+- return_date date
 - borrower => people.id
 
 #mode of borrowing could be s.th. as "asked for by e-mail"/face-to-face
+## You didn't specify a data type for this, so I put 'text'. Another option
+## would be to have another table listing all the allowed modes of borrowing,
+## and have mode_of_borrowing in this table contain a reference to that one.
